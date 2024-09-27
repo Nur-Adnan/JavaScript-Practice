@@ -144,9 +144,7 @@ const value = CalculateArithmetic(1, 2, minus);
 console.log(value);
 
 
-*/
-
-// create a counter in javascript (count downs 30 to 0)
+//* create a counter in javascript (count downs 30 to 0)
 let count = 30;
 
 const countdown = setInterval(() => {
@@ -158,3 +156,18 @@ const countdown = setInterval(() => {
     console.log("Countdown finished!");
   }
 }, 1000);
+
+
+*/
+
+//* Calculate the time it takes between a setTimeout call and the inner function actually running
+
+function measureTime() {
+  //* Date.now() to get the current time (in milliseconds)
+  const start = Date.now();
+  setTimeout(() => {
+    const end = Date.now();
+    const duration = end - start;
+    console.log(`Time taken: ${duration}ms`);
+  }, 1000);
+}
