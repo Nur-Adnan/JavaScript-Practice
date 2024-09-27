@@ -1,4 +1,4 @@
-/* */
+/* 
 //* Conditions
 let firstName = "Adnan";
 let age = 18;
@@ -115,3 +115,10 @@ function minus(a, b) {
 
 const value = CalculateArithmetic(1, 2, "minus");
 console.log(value);
+
+*/
+
+function greet() {
+  console.log("Hello World");
+}
+setTimeout(greet, 2000);
