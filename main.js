@@ -131,10 +131,6 @@ function greet() {
 setInterval(greet, 2000);
 
 //* function
-
-
-*/
-
 function CalculateArithmetic(a, b, arithmeticFinalFunction) {
   const ans = arithmeticFinalFunction(a, b);
   return ans;
@@ -146,3 +142,19 @@ function minus(a, b) {
 
 const value = CalculateArithmetic(1, 2, minus);
 console.log(value);
+
+
+*/
+
+// create a counter in javascript (count downs 30 to 0)
+let count = 30;
+
+const countdown = setInterval(() => {
+  console.log(count);
+  count--;
+
+  if (count < 0) {
+    clearInterval(countdown);
+    console.log("Countdown finished!");
+  }
+}, 1000);
