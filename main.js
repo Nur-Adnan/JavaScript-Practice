@@ -116,9 +116,33 @@ function minus(a, b) {
 const value = CalculateArithmetic(1, 2, "minus");
 console.log(value);
 
-*/
+
+//* setTimeout
 
 function greet() {
   console.log("Hello World");
 }
 setTimeout(greet, 2000);
+
+//* setInterval
+function greet() {
+  console.log("Hello World");
+}
+setInterval(greet, 2000);
+
+//* function
+
+
+*/
+
+function CalculateArithmetic(a, b, arithmeticFinalFunction) {
+  const ans = arithmeticFinalFunction(a, b);
+  return ans;
+}
+
+function minus(a, b) {
+  return a - b;
+}
+
+const value = CalculateArithmetic(1, 2, minus);
+console.log(value);
